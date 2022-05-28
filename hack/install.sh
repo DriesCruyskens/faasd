@@ -134,7 +134,7 @@ install_faasd() {
 
   mkdir -p /tmp/faasd-${version}-installation/hack
   cd /tmp/faasd-${version}-installation
-  $SUDO curl -fSLs "https://raw.githubusercontent.com/DriesCruyskens/faasd/${version}/docker-compose.yaml --output "docker-compose.yaml"
+  $SUDO curl -fSLs "https://raw.githubusercontent.com/DriesCruyskens/faasd/${version}/docker-compose.yaml" --output "docker-compose.yaml"
   $SUDO curl -fSLs "https://raw.githubusercontent.com/openfaas/faasd/${version}/prometheus.yml" --output "prometheus.yml"
   $SUDO curl -fSLs "https://raw.githubusercontent.com/openfaas/faasd/${version}/resolv.conf" --output "resolv.conf"
   $SUDO curl -fSLs "https://raw.githubusercontent.com/openfaas/faasd/${version}/hack/faasd-provider.service" --output "hack/faasd-provider.service"
